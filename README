@@ -1,9 +1,9 @@
-# fragpipe Docker Manual for BIOL4415 lab1 #
+# fragpipe Docker Manual for BIOL4415 lab1
 
 Official documentation: (https://fragpipe.nesvilab.org/docs/tutorial_headless.html) 
-### Please refer to the official documentation for the tags and detailed parameters to tailor your code ###
+### Please refer to the official documentation for the tags and detailed parameters to tailor your code
 
-1. Ensure your system has docker installed. Start the Docker daemon. 
+1. Ensure your system has docker installed. Start the Docker daemon (can just start the docker Desktop). 
     - Check by "docker --help" in terminal 
     - If encounter "command not found"
         ```
@@ -24,5 +24,5 @@ Official documentation: (https://fragpipe.nesvilab.org/docs/tutorial_headless.ht
 4. Update the workflow and manifest files
     - Adjust the content of the .workflow and manifest.tsv files based on your need for the experiment
 5. Run `./run.sh` as a helper command to run the fragpie docker container into bash shell with proper volumes mounted.
-    - Here the volumns are bind mounted to the 
+    - Here the volumns are bind mounted to the local directory where you pulled the repo. 
 6. In the containers bash shell, run `/tools/run-inner.sh` to start processing
