@@ -1,14 +1,17 @@
-###fragpipe Usage###
+# fragpipe Docker Manual for BIOL4415 lab1 #
 
-Official documentation: https://fragpipe.nesvilab.org/docs/tutorial_headless.html 
-Please refer to the official documentation for the tags and detailed parameters if
+Official documentation: (https://fragpipe.nesvilab.org/docs/tutorial_headless.html) 
+### Please refer to the official documentation for the tags and detailed parameters to tailor your code ###
 
 1. Ensure your system has docker installed. Start the Docker daemon. 
     - Check by "docker --help" in terminal 
     - If encounter "command not found"
+        ```
         export PATH=$PATH:/usr/local/bin 
         docker login 
+        ```
 2. Copy the necessary tools into the `./tools` folder (`.jar` files that fragpie needs to run)
+    [Additional tools and different version released] (https://github.com/Nesvilab/FragPipe/releases/)
     - The three tools that fragpipe 23.1 requires to operate: IonQuant.jar, MSFragger.jar, diaTracer.jar (these can 
     be downloaded via the fragpipe offical website with an institution related email for academic use)
     - Here the tools have been already downloaded and included in the `./tools` folder 
