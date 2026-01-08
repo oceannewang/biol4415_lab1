@@ -1,7 +1,7 @@
-# fragpipe Docker Manual for BIOL4415 lab1
+### fragpipe Docker Manual for BIOL4415 lab1
 
 Official documentation: (https://fragpipe.nesvilab.org/docs/tutorial_headless.html) 
-### Please refer to the official documentation for the tags and detailed parameters to tailor your code
+##### Please refer to the official documentation for the tags and detailed parameters to tailor your code
 
 1. Ensure your system has docker installed. Start the Docker daemon (can just start the docker Desktop). 
     - Check by "docker --help" in terminal 
