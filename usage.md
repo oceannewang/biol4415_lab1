@@ -7,19 +7,21 @@ Official documentation: (https://fragpipe.nesvilab.org/docs/tutorial_headless.ht
     - Check by "docker --help" in terminal 
     - If encounter "command not found"
         ```
-        export PATH=$PATH:/usr/local/bin 
+        export PATH="$PATH:$HOME/.docker/bin"
         docker login 
         ```
 
 2. Copy the necessary tools into the `./tools` folder (`.jar` files that fragpie needs to run)
     [Additional tools and different version released] (https://github.com/Nesvilab/FragPipe/releases/)
-    - The three tools that fragpipe 23.1 requires to operate: IonQuant.jar, MSFragger.jar, diaTracer.jar (these can 
+    - The three tools that fragpipe 23.1 requires to operate: IonQuant-1.11.18.jar, MSFragger-4.4.jar, diaTracer-2.2.1.jar (these can 
     be downloaded via the fragpipe offical website with an institution related email for academic use)
-    - Here the tools have been already downloaded and included in the `./tools` folder 
+    - Move the downloaded tools into the `./tools` folder 
 
 3. Copy necessary data into the `./data` folder (fasta, modified workflow, mzMl, manifest.tsv, etc.)
-    - Move the .mzML files from the ./mzMLFiles folder and fasta files from the ./fastaFiles in to the `./data` folder in the repo or move those files from ./testData folder from the OneDrive biol4415 folder to the `./data` folder in the repo.
-    - All the Workflow files are included in the docker image you pulled and can be found in the `./workflows-original` folder, you can modify the parameters based on the your need for the experiment. Here we will use the "LFQ-MBR_custom.workflow" from the ./testData folder into the `./data` in the repo. 
+    - Move the .mzML files and fasta files from the `./biol4415_lab1_testData` downloaded from the OneDrive in to the `./data` folder or just mount the ./data folder from the `./biol4415_lab1_testData` folder to the docker container in the `./run.sh` (replace the ./data with your absolute path to the ./data of `./biol4415_lab1_testData`)
+    - All the Workflow files are included in the docker image you pulled and can be found in the `./workflows-original` folder,
+    you can modify the parameters based on the your need for the experiment 
+    - We will be using the "LFQ-MBR_custom.workflow" file that is already included in the `./data` folder you have mounted 
 
 4. Update the workflow and manifest files
     - Adjust the content of the .workflow and manifest.tsv files based on your need for the experiment
