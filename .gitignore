@@ -8,5 +8,5 @@ data/*
 
 tools/*
 !tools/.gitkeep
-!tools/.run-inner.sh
+!tools/run-inner.sh
 
